@@ -29,7 +29,7 @@ const App = () => {
     setLoading(true);
     setError("");
     try {
-      const response = await axios.post("http://localhost:8080/api/email/generate", {
+      const response = await axios.post("https://email-writer-sb-production.up.railway.app/", {
         emailContent,
         tone,
       });
