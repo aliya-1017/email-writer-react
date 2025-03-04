@@ -53,14 +53,14 @@ const App = () => {
       secondary: { main: "#A2D8FF" },
       background: {
         background: {
-          default: darkMode ? "#1E1E1E" : "#FAF3DD", // Floral Pastel Yellow
-          paper: darkMode ? "#121212" : "#FAF3DD", // Floral Pastel Yellow
+          default: darkMode ? "#1E1E1E" : "#FAF3DD", 
+          paper: darkMode ? "#121212" : "#FAF3DD", 
         },        
       },
       text: { primary: darkMode ? "#FFFFFF" : "#5F5A6C" },
     },
     typography: {
-      fontFamily: "'Comic Sans MS', cursive, sans-serif",
+      fontFamily: "Inter, sans-serif",
       h4: {
         fontWeight: 700,
         fontSize: "1.8rem",
@@ -82,7 +82,7 @@ const App = () => {
           justifyContent: "center",
           alignItems: "center",
           minHeight: "100vh",
-          background: darkMode ? "#121212" : "", // Floral Pastel Yellow
+          background: darkMode ? "#121212" : "",
 
           transition: "all 0.4s ease-in-out",
         }}
@@ -96,7 +96,7 @@ const App = () => {
               : "0px 4px 15px rgba(0, 0, 0, 0.1)",
             maxWidth: "600px",
             width: "100%",
-            background: darkMode ? "#1E1E1E" : "#B3CEE5", // Floral Pastel Yellow
+            background: darkMode ? "#1E1E1E" : "#B3CEE5",
 
             textAlign: "center",
           }}
@@ -117,7 +117,7 @@ const App = () => {
               onChange={(e) => setEmailContent(e.target.value)}
               sx={{
                 mb: 2,
-                bgcolor: darkMode ? "#2E2E2E" : "white", // Floral Pastel Yellow
+                bgcolor: darkMode ? "#2E2E2E" : "white", 
 
                 borderRadius: "10px",
                 "& .MuiOutlinedInput-root": {
@@ -134,7 +134,7 @@ const App = () => {
               }}
             />
 
-            {/* Tone (Optional) - Added "Select a Tone" Popup */}
+            
             <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
               <Typography sx={{ pr: 1, fontWeight: "bold", color: darkMode ? "#FFFFFF" : "#5F5A6C" }}>
                 Tone (Optional):
